@@ -1,0 +1,353 @@
+.normal-navigation-bar{
+    display: flex;
+    align-items:center; 
+    justify-content: center;
+    justify-content: space-between;
+    font-size: 0.7em;
+    text-transform:uppercase; 
+    height:25px;
+    font-family: 'Montserrat', sans-serif; 
+    color: azure;
+    padding-bottom: 900px; 
+    background: url('images/roca2.jpg');
+    background-repeat: no-repeat;
+    background-size: 2000px 1000px;
+
+}
+
+.right-side{ 
+    display: flex; 
+}
+
+.normal-navigation-bar> .right-side> div{ 
+    margin-right:30px; 
+}
+
+.intro{ 
+    font-family: 'Montserrat', sans-serif;
+    justify-content: center;
+    overflow:auto; 
+    padding-bottom: 820px;
+    font-size: 2em; 
+    text-align: center; 
+    padding-bottom: 30px; 
+
+}
+
+.long-int{ 
+    font-family: 'Montserrat', sans-serif;
+    text-align: center; 
+    margin-right: 200px; 
+    margin-left: 200px; 
+    padding-bottom: 400px;
+}
+
+.description{ 
+    display:flex;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left; 
+    margin-left:300px;
+    margin-right: 900px;
+    padding-bottom: 600px; 
+}
+
+.vid{
+    display: block;   
+    left: 50%;
+    position: absolute;
+    width: 100%;
+    top: 220%;
+}
+.contact-info{ 
+    font-family: 'Montserrat', sans-serif;
+}
+
+.title-page{ 
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items:center; 
+    justify-content: center;
+    font-size: .7em; 
+    padding-bottom:70px;
+}
+
+.page-title{ 
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items:center; 
+    justify-content: center;
+    font-size: .7em; 
+
+}
+
+.tit{ 
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items:center; 
+    justify-content: center;
+    font-size: .7em; 
+}
+
+.ABOUT{ 
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items:center; 
+    justify-content: center;
+    font-size: 1.0em;
+    text-transform:uppercase;
+    padding-bottom: 100px;
+  
+}
+
+.find-me{ 
+    align-items:center; 
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    font-size: 1.0em;
+    text-transform:uppercase;
+    position: absolute; 
+    top: 210px;
+    margin:1000px;
+}
+
+.boatboy{ 
+    width: 500px;
+    position: absolute;
+    left: 250px;
+}
+.descbb{ 
+    align-items:center; 
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items:center; 
+    justify-content: center;
+    font-size: 1.0em;
+    margin-left: 870px; 
+    margin-right: 170px;
+    position: absolute;
+    top: 450px;
+}
+
+.name{
+    padding-bottom: 10px;
+}
+.email{
+    padding-bottom: 10px;
+}
+.questions{
+    padding-bottom: 10px;
+}
+.feedback{
+    padding-bottom: 10px;
+}
+
+
+.questionair{ 
+    font-family: 'Montserrat', sans-serif;
+    position:absolute; 
+    left:880px;
+    top: 620px;
+}
+.snap{ 
+    width: 70px;
+}
+
+.instagram_lg{ 
+    width: 70px;
+}
+
+.sig-img{ 
+    width: 150px; 
+    float: right; 
+}
+
+.camera-roll{ 
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-bottom: 100px;
+}
+
+.co-img{
+    width:600px; 
+
+}
+
+.co-img:hover{ 
+    filter: brightness(30%);
+    transition: 2s; 
+}
+
+.cream-img{ 
+    width: 600px;
+}
+
+.cream-img:hover{ 
+    filter: brightness(20%);
+    transition: 2s; 
+}
+.roca-img{ 
+    width: 600px;
+    height:800px
+}
+
+.roca-img:hover{ 
+    filter: brightness(20%);
+    transition: 2s; 
+}
+
+.news{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+    height:25px;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 40px;
+}
+
+.subtitle1{ 
+    position: absolute; 
+    justify-content: center;
+    font-size: 1em;
+    height:25px;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 40px;
+    top: 320%;
+    margin-right: 1340px;
+    margin-left: 40px;
+    color:white;
+}
+
+.subtitle2{ 
+    position: absolute; 
+    justify-content: center;
+    font-size: 1em;
+    height:25px;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 40px;
+    top: 320%;
+    margin-right: 700px;
+    margin-left: 40px;
+    color:white;
+}
+
+.subtitle3{ 
+    position: absolute; 
+    justify-content: center;
+    font-size: 1em;
+    height:25px;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 40px;
+    top: 320%;
+    margin-right: 40px;
+    margin-left: 40px;
+    color:white;
+}
+
+.img{ 
+    
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 1em;
+    height:25px;
+    font-family: 'Montserrat', sans-serif;
+    position: absolute; 
+    justify-content: center; 
+
+}
+
+.eduac{
+    font-size: 1em;
+    height:25px;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 900px;
+    position:absolute; 
+    left: 140px;
+    top: 600px;
+}
+
+.volunt{ 
+    width:600px;
+    padding-bottom: 00px;
+    margin-left: 23px;
+}
+
+.volunt:hover{ 
+    filter: brightness(20%);
+    transition: 2s; 
+
+}
+
+.imgtxt{ 
+    position:absolute; 
+    left: 225px;
+    top: 150px;
+    color: azure; 
+    font-size: 3em;
+}
+
+.imgtxt2{ 
+    position:absolute; 
+    left: 700px;
+    top: 150px;
+    color: azure; 
+    font-size: 3em;
+
+}
+.imgtxt3{ 
+    position:absolute; 
+    left: 1425px;
+    top: 150px;
+    color: azure; 
+    font-size: 3em;
+}
+
+.eac{ 
+    position:absolute; 
+    top: 1100px; 
+    margin-right: 67%;
+    margin-left: 15%;
+    font-size: 1em;
+    height:25px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.eac2{ 
+    position:absolute; 
+    top: 1975px; 
+    margin-left: 890px;
+    margin-right: 180px;
+    font-size: 1em;
+    height:25px;
+    font-family: 'Montserrat', sans-serif;
+}
+.eac3{ 
+    position:absolute; 
+    top: 2700px; 
+    margin-right: 67%;
+    margin-left: 12%;
+    padding-bottom: 300px; 
+    font-size: 1em;
+    height:25px;
+    font-family: 'Montserrat', sans-serif;
+}
+.placehold1{ 
+    width: 400px; 
+    position: absolute; 
+    top: 1050px;
+    left: 950px;
+}
+.placehold2{ 
+    width: 400px; 
+    position: absolute; 
+    top: 1850px;
+    right: 1050px;
+}
+.placehold3{ 
+    width: 500px; 
+    position: absolute; 
+    top: 2700px;
+    left: 950px;
+    padding-bottom: 200px;
+}
