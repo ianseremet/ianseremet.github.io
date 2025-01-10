@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ian Seremet - Mechanical Engineer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#introduction"><img src="images/hand-solid.svg"></a></li>
+            <li><a href="#projects"><img src="images/gear-solid.svg"></a></li>
+            <li><a href="#experiences"><img src="images/briefcase-solid.svg"></a></li>
+            <li><a href="#gallery"><img src ="images/image-solid.svg"></a></li>
+            <li><a href="#about"><img src="images/address-card-solid.svg"></a></li>
+            <li><a href="#footer"><img src="images/phone-solid.svg"></a></li>
+        </ul>
+    </nav>
+
+    <a href="documents/Ian_Seremet_Resume_Website.pdf" download class="download-btn">Download Resume</a>
+    <div id="gameContainer">
+        <div class="boat" id="boat"></div>
+    </div>
+    <script src="game.js"></script>
+
+    <!-- Introduction Section -->
+    <section id="introduction" class="slideshow-container">
+        <div class="overlay-text">
+            <h1>Hi, I'm Ian.</h1>
+            <p>Over the years, I've been drawn to the intersection of tech and creativity. This space showcases some of the tools and projects I've tinkered with. They're a mix of my curiosity, a desire to experiment, and a bit of playful engineering. Have a look around and I hope you find something interesting.</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Engineering Projects</h2>
+        <!-- Drone Airbag -->
+        <div class="project-card" id="drone-airbag">
+            <h3>Drone Airbag - Drone Safety Device</h3>
+            <p class="project-date">Ongoing</p>
+            <img src="images/IMG_6942.jpg" alt="UROP Project" class="project-image">
+            <p>After purchasing my first drone, I encountered several close calls during flights that could have ended disastrously. I often flew over large bodies of water and had near-misses with trees and other obstacles. My solution: develop a "trigger" mechanism to deploy an airbag for a drone. Focusing on design sustainability and compact packaging, I created a casing to house a microcontroller, CO2 cartridge, and servo. Currently, I am developing a method to trigger the gas canister using a barometric pressure sensor to detect altitude changes.</p>
+        </div>
+        <!-- Error Detection -->
+        <div class="project-card" id="urop-conformal3d">
+            <h3>UROP: Detection of Deposition Errors in Conformal 3D Printing using Computer Vision</h3>
+            <p class="project-date">Winter 2024</p>
+            <img src="images/urop.png" alt="UROP Project" class="project-image">
+            <p>This project focused on creating a machine learning-based system to detect errors in 3D printing processes. Using annotated image data labeled with bounding boxes via CVAT, I trained a YOLO object detection model to identify and classify printing defects in real time. The ultimate goal was to improve 3D printing quality assurance by automating the detection of commonly replaced or defective parts.</p>
+            <a href="https://ugresearch.umn.edu/presentation-opportunities/fall-symposium/presenters/ian-seremet" download class="read-more">See More</a>
+        </div>
+
+        <!-- Camera Mount -->
+        <div class="project-card" id="camera-mount">
+            <h3>Aerotech 3D-Printer Camera Mount</h3>
+            <p class="project-date">Spring 2024</p>
+            <img src="images/cam_mount.jpg" alt="Camera Mount Project" class="project-image">
+            <p>At the start of my work with the McAlpine Research Group, my first task was to design and prototype a camera mount compatible with an Aerotech 3D printer. The mount was designed for greater adjustability and vibration resistance, securing a camera for in-situ monitoring and filming of conformal printing processes. These prints were used to create cricothyrotomy samples for medical students to practice the procedure.</p>
+            <a href="documents/flow-controller-mount.stl" download class="read-more">Download</a>
+        </div>
+        <!-- Raspberry Pi PC -->
+        <div class="project-card" id="raspberry-pi-pc">
+            <h3>Raspberry Pi Mini PC</h3>
+            <p class="project-date">Winter 2023</p>
+            <img src="images/raspberry-pi-minipc.jpg" alt="Raspberry Pi Project" class="project-image">
+            <p>For this project, I wanted to expand my programming skills and gain experience with hardware, specifically computer hardware. I designed a durable, rugged case to house a Raspberry Pi computer board. Initially, I planned to use the mini PC to host this website, but after researching potential vulnerabilities to hackers, I pivoted its purpose to another application. Click "Download" to access the design files.</p>
+            <a href="documents/Raspberry Pi Tower REV 4.STL" download class="read-more">Download</a>
+        </div>
+        <!-- Solar Panel Rotator -->
+        <div class="project-card" id="solar-panel-rotater">
+            <h3>Solar Panel Rotator</h3>
+            <p class="project-date">Fall 2023</p>
+            <img src="images/IMG_3355.jpg" alt="Solar Panel Rotator Project" class="project-image">
+            <p>For my first professional project, I designed and developed a robot to rotate a solar panel to the optimal angle for maximum solar incidence, increasing energy output. This project taught me a critical lesson about the difference between engineering and tinkering: documenting the process thoroughly. Click the "See More" button below for additional details.</p>
+            <a href="documents/solar_panel_rotator.pdf" download class="read-more">See More</a>
+        </div>
+        <!-- Rover -->
+        <div class="project-card" id="rover">
+            <h3>Custom Rover</h3>
+            <p class="project-date">Spring 2022</p>
+            <img src="images/IMG_7385.jpg" alt="Rover Project" class="project-image">
+            <p>Inspired by the Mars rover <i>("Perseverance")</i>, I set out to design and engineer an autonomous rover capable of performing various tasks such as shoveling snow and collecting samples. Although this project didn’t progress as far as I hoped due to the start of college, it laid the groundwork for future attempts. Stay tuned!</p>
+        </div>
+        <!-- Boat -->
+        <div class="project-card" id="boat">
+            <h3>S.S. Komarac <i>("The Mosquito")</i></h3>
+            <p class="project-date">Summer 2021</p>
+            <img src="images/IMG_4344.JPEG" alt="Boat Project" class="project-image">
+            <p>This was one of my earliest and most ambitious projects. I dove headfirst into building a boat, combining carpentry skills with sheer determination to bring my vision to life. The S.S. Komarac stands as a testament to my ability to transform wood planks into a functional, seaworthy masterpiece.</p>
+        </div>
+    </section>
+
+
+
+    <section id="experiences">
+        <h2>Professional Experiences</h2>
+        <div class="experience-item">
+            <h3>Product Engineering Intern at Benchmark Electronics</h3>
+            <p>Summer 2023</p>
+            <p>
+                My first internship at Benchmark Electronics was a fantastic introduction to the industry. While my initial goal was to gain some hands-on experience, the role ended up being an invaluable opportunity to develop skills in Design for Manufacturing (DFM). I worked closely with experienced engineers and learned how to design products that are easier to manufacture and assemble. This knowledge gave me a new appreciation for the practical challenges of engineering, especially the importance of bridging the gap between design and production. I also picked up valuable technical skills, such as automating repetitive tasks with Python, Excel, and VBA. Overall, it was an eye-opening experience that gave me a unique insight into the difficulties of manufacturing that should be considered during the design stage. 
+            </p>
+            <img src="images/Bench_logo.png">
+        </div>
+    
+        <div class="experience-item">
+            <h3>Advanced Manufacturing Engineering Intern at The Toro Company</h3>
+            <p>Summer 2024</p>
+            <p>
+                At Toro, I worked as an Advanced Manufacturing Engineering Intern, but my role was heavily focused on design and prototyping. My primary project involved developing an end-stock and a mechanical frame to assist in producing zero-turn lawn mowers. This project required designing, iterating, and refining a solution that would improve efficiency and accuracy in manufacturing. The hands-on nature of the work allowed me to explore various design challenges, from stress analysis to assembly constraints, and prototype solutions in a fast-paced environment. While the position was rooted in manufacturing, it gave me significant exposure to mechanical design, and I was able to apply engineering principles to real-world problems, reinforcing my interest in design and R&D.
+            </p>
+        </div>
+    </section>
+    
+    
+
+    <section id="gallery"> 
+    <h2>Drone Photography Gallery</h2>
+    <p>
+        I recently started experimenting with drone photography and videography, capturing unique perspectives from above. This gallery showcases some of the early work I've done, exploring the beauty and versatility of aerial imagery.
+    </p>
+    <script>
+        document.addEventListener("contextmenu", function (event) {
+            if (event.target.tagName === "IMG") {
+                event.preventDefault();
+                // Redirect to the Rick Roll video
+                window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+            }
+        });
+    </script>
+
+    <div class="grid-container">
+        <!-- first row -->
+        <div class="grid-item"><img src="images/grid_1.jpg" alt="Image 1"></div>
+        <div class="grid-item"><img src="images/grid_2.jpg" alt="Image 2"></div>
+        <div class="grid-item"><img src="images/grid_3.jpg" alt="Image 3"></div>
+        <!-- second row -->
+        <div class="grid-item"><img src="images/grid_4.jpg" alt="Image 4"></div>
+        <div class="grid-item"><img src="images/grid_5.jpg" alt="Image 5"></div>
+        <div class="grid-item"><img src="images/grid_6.jpg" alt="Image 6"></div>
+        <!-- third row -->
+        <div class="grid-item"><img src="images/grid_7.JPG" alt="Image 7"></div>
+        <div class="grid-item"><img src="images/grid_8.JPG" alt="Image 8"></div>
+        <div class="grid-item"><img src="images/grid_9.jpg" alt="Image 9"></div>
+        <!-- fourth row -->
+        <div class="grid-item"><img src="images/grid_10.jpg" alt="Image 10"></div>
+        <div class="grid-item"><img src="images/grid_11.jpg" alt="Image 11"></div>
+        <div class="grid-item"><img src="images/grid_12.JPG" alt="Image 12"></div>
+        <!-- fifth row -->
+        <div class="grid-item"><img src="images/grid_13.jpg" alt="Image 13"></div>
+        <div class="grid-item"><img src="images/grid_14.jpg" alt="Image 14"></div>
+        <div class="grid-item"><img src="images/grid_15.JPG" alt="Image 15"></div>
+        <!-- sixth row -->
+        <div class="grid-item"><img src="images/grid_16.jpg" alt="Image 16"></div>
+        <div class="grid-item"><img src="images/grid_17.JPG" alt="Image 17"></div>
+        <div class="grid-item"><img src="images/grid_18.jpg" alt="Image 18"></div>
+        
+    </div>
+</section>
+
+</script>
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="images/about_img.JPG" alt="personal image">
+        <p>Hello and thank you for checking out my website! I'm a junior at the University of Minnesota - Twin Cities, studying Mechanical Engineering in the College of Science and Engineering. When I'm not hitting the books, I'm involved in Formula SAE, various student organizations, engineering projects (obviously), and rock climbing now and then. I hope my collection resonates with you or even nudges you to explore your own ideas.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>If you’d like to get in touch, whether it’s for collaborations, questions, or just to say hi, I’d love to hear from you!</p>
+        
+        <form action="https://formsubmit.co/ianseremetwebsite@gmail.com" method="POST" class="contact-form">
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="footer">
+        <a href="https://www.linkedin.com/in/ian-seremet-5b1471248/" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.fiverr.com/s/8zp06oE" target="_blank" class="social-icon">
+            <img src="images/fiverr.png" alt="Fiverr" style="width: 24px; height: 24px;">
+        </a>        
+        <a href="https://www.instagram.com/i.sierramist?igsh=ZWswMWhjMjNhZm0z&utm_source=qr" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+    </footer>
+</body>
+
+</html>
