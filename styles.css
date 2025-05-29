@@ -53,6 +53,12 @@ nav ul {
     top: 0;
     left: 0;
 }
+nav a img {
+    width: 28px;    /* or 32px depending on visual preference */
+    height: 28px;
+    display: block;
+    margin: auto;
+}
 
 nav li {
     margin: 15px 0;
@@ -323,6 +329,15 @@ section {
     max-height: 100px; 
     object-fit: contain; 
 }
+
+.experience-item .benchmark-logo {
+    width: 250px !important;
+    max-width: 100% !important;
+    height: auto !important;
+    display: block;
+    margin: 20px auto;
+}
+
 
 .project-card:hover, .education-item:hover, .experience-item:hover {
     transform: scale(1.10);

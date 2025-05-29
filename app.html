@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>App Launcher</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Space Mono', monospace;
+      background-color: #2a2a2a;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 30px;
+      color: #8dc2a9;
+    }
+
+    .section {
+      max-width: 800px;
+      width: 100%;
+      margin-bottom: 40px;
+    }
+
+    .section h2 {
+      font-size: 1.5em;
+      color: #8dc2a9;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #8dc2a9;
+      padding-bottom: 5px;
+    }
+
+    .tool-link {
+      display: block;
+      margin: 8px 0;
+      padding: 10px 15px;
+      background-color: #4CAF50;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+      text-align: center;
+    }
+
+    .tool-link:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h1>App Launcher</h1>
+
+  <div class="section">
+    <h2>Mechanical Design & Analysis</h2>
+    <a class="tool-link" href="tools/fourbar.py" download>Four-Bar Synthesizer</a>
+    <a class="tool-link" href="tools/mechanicaladvantage.py" download>Mechanical Advantage Calculator</a>
+    <a class="tool-link" href="tools/transmissionangle.py" download>Transmission Angle Checker</a>
+    <a class="tool-link" href="tools/forceanalysis.py" download>Force Analysis Tool</a>
+    <a class="tool-link" href="tools/geardesigner.py" download>Gear Designer</a>
+    <a class="tool-link" href="tools/deflection.py" download>Beam Deflection Calculator</a>
+    <a class="tool-link" href="tools/hydraulicdesigner.py" download>Hydraulic Circuit Designer</a>
+  </div>
+
+  <div class="section">
+    <h2>Hardware Selection</h2>
+    <a class="tool-link" href="tools/boltselector.py" download>Bolt Selector</a>
+    <a class="tool-link" href="tools/springselector.py" download>Spring Calculator</a>
+    <a class="tool-link" href="tools/bearingsizer.py" download>Bearing Sizer</a>
+    <a class="tool-link" href="tools/pipesizer.py" download>Pipe Sizing Tool</a>
+    <a class="tool-link" href="tools/sheetmetal.py" download>Sheet Metal Bending Assistant</a>
+  </div>
+
+  <div class="section">
+    <h2>Fatigue and Stress</h2>
+    <a class="tool-link" href="tools/buckling.py" download>Buckling Calculator</a>
+    <a class="tool-link" href="tools/fatigueanalyzer.py" download>Goodman Fatigue Analyzer</a>
+    <a class="tool-link" href="tools/tolerancestackup.py" download>Tolerance Stack-up Simulator</a>
+    <a class="tool-link" href="tools/tolerancechooser.py" download>Tolerance Chooser</a>
+  </div>
+
+  <div class="section">
+    <h2>Materials & Fluids</h2>
+    <a class="tool-link" href="tools/materialproperties.py" download>Material Properties Viewer</a>
+    <a class="tool-link" href="tools/fluidcharacterization.py" download>Fluid Characterization Tool</a>
+  </div>
+
+  <div class="section">
+    <h2>Documentation</h2>
+    <a class="tool-link" href="tools/renderdesigndoc.py" download>Render Design Documentation</a>
+    <a class="tool-link" href="tools/assemblyinstructions.py" download>Assembly Instruction Writer</a>
+    <a class="tool-link" href="tools/maintenanceplanner.py" download>Maintenance Planning Tool</a>
+  </div>
+
+  <div class="section">
+    <h2>Reference</h2>
+    <a class="tool-link" href="documents/Basic-Measurements-Poster.pdf" download>McMaster-Carr Reference</a>
+    <a class="tool-link" href="documents/tool-request-form.pdf" download>Tool Request Form</a>
+  </div>
+
+</body>
+</html>

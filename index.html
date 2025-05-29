@@ -20,20 +20,23 @@
     <!-- Navigation Bar -->
     <nav>
         <ul>
-            <li><a href="#introduction"><img src="images/hand-solid.svg"></a></li>
-            <li><a href="#projects"><img src="images/gear-solid.svg"></a></li>
-            <li><a href="#experiences"><img src="images/briefcase-solid.svg"></a></li>
-            <li><a href="#gallery"><img src ="images/image-solid.svg"></a></li>
-            <li><a href="#about"><img src="images/address-card-solid.svg"></a></li>
-            <li><a href="#footer"><img src="images/phone-solid.svg"></a></li>
+            <li><a href="#introduction"><img src="images/hand-solid.svg" alt="Intro"></a></li>
+            <li><a href="#projects"><img src="images/gear-solid.svg" alt="Projects"></a></li>
+            <li><a href="#experiences"><img src="images/briefcase-solid.svg" alt="Drone"></a></li> <!-- replaced briefcase with drone -->
+            <li><a href="#gallery"><img src="images/drone.png" alt="Gallery"></a></li>
+            <li><a href="#about"><img src="images/address-card-solid.svg" alt="About"></a></li>
+            <li><a href="#footer"><img src="images/phone-solid.svg" alt="Contact"></a></li>
+            <li><a href="signin.html"><img src="images/hammer.png" alt="Toolbox Sign In"></a></li> <!-- moved briefcase to end -->
         </ul>
     </nav>
 
+
     <a href="documents/Ian_Seremet_Resume_Website.pdf" download class="download-btn">Download Resume</a>
-    <div id="gameContainer">
-        <div class="boat" id="boat"></div>
+    <div id="gameContainer" style="display: flex; align-items: center; justify-content: center;">
+        <div style="height: 50px; width: 50px;"></div> <!-- Empty placeholder for spacing -->
     </div>
-    <script src="game.js"></script>
+<!-- Removed <script src="game.js"></script> -->
+
 
     <!-- Introduction Section -->
     <section id="introduction" class="slideshow-container">
@@ -74,7 +77,7 @@
             <h3>Aerotech 3D-Printer Camera Mount</h3>
             <p class="project-date">Spring 2024</p>
             <img src="images/cam_mount.jpg" alt="Camera Mount Project" class="project-image">
-            <p>At the start of my work with the McAlpine Research Group, my first task was to design and prototype a camera mount compatible with an Aerotech 3D printer. The mount was designed for greater adjustability and vibration resistance, securing a camera for in-situ monitoring and filming of conformal printing processes. These prints were used to create cricothyrotomy samples for medical students to practice the procedure.</p>
+            <p>When I first joined the McAlpine Research Group, my first project was to design and build a camera mount for an Aerotech 3D printer. The goal was to make it adjustable and vibration-resistant so we could securely film conformal printing in action. The footage was used to monitor the printing process and capture the production of cricothyrotomy training models.</p>
             <a href="documents/flow-controller-mount.stl" download class="read-more">Download</a>
         </div>
         <!-- Raspberry Pi PC -->
@@ -82,7 +85,7 @@
             <h3>Raspberry Pi Mini PC</h3>
             <p class="project-date">Winter 2023</p>
             <img src="images/raspberry-pi-minipc.jpg" alt="Raspberry Pi Project" class="project-image">
-            <p>For this project, I wanted to expand my programming skills and gain experience with hardware, specifically computer hardware. I designed a durable, rugged case to house a Raspberry Pi computer board. Initially, I planned to use the mini PC to host this website, but after researching potential vulnerabilities to hackers, I pivoted its purpose to another application. Click "Download" to access the design files.</p>
+            <p>I took on this project to build up my programming skills and get hands-on experience working with computer hardware. I designed a rugged enclosure for a Raspberry Pi, aiming to use it as a server to host this website. After learning more about the security risks involved, I decided to repurpose the setup for a different application. You can download the design files using the button below.</p>
             <a href="documents/Raspberry Pi Tower REV 4.STL" download class="read-more">Download</a>
         </div>
         <!-- Solar Panel Rotator -->
@@ -93,19 +96,12 @@
             <p>For my first professional project, I designed and developed a robot to rotate a solar panel to the optimal angle for maximum solar incidence, increasing energy output. This project taught me a critical lesson about the difference between engineering and tinkering: documenting the process thoroughly. Click the "See More" button below for additional details.</p>
             <a href="documents/solar_panel_rotator.pdf" download class="read-more">See More</a>
         </div>
-        <!-- Rover -->
-        <div class="project-card" id="rover">
-            <h3>Custom Rover</h3>
-            <p class="project-date">Spring 2022</p>
-            <img src="images/IMG_7385.jpg" alt="Rover Project" class="project-image">
-            <p>Inspired by the Mars rover <i>("Perseverance")</i>, I set out to design and engineer an autonomous rover capable of performing various tasks such as shoveling snow and collecting samples. Although this project didn’t progress as far as I hoped due to the start of college, it laid the groundwork for future attempts. Stay tuned!</p>
-        </div>
         <!-- Boat -->
         <div class="project-card" id="boat">
             <h3>The Komarac <i>("The Mosquito")</i></h3>
             <p class="project-date">Summer 2021</p>
             <img src="images/IMG_4344.JPEG" alt="Boat Project" class="project-image">
-            <p>This was one of my earliest and most ambitious projects. I dove headfirst into building a boat, combining carpentry skills with sheer determination to bring my vision to life. The S.S. Komarac stands as a testament to my ability to transform wood planks into a functional, seaworthy masterpiece.</p>
+            <p>This was one of the first major projects I took on. I decided to build a boat, combining some basic carpentry skills with a lot of persistence. Seeing the Komarac come together from loose planks to a working vessel was incredibly rewarding, and it sparked a deeper interest in how things are built and why they work. It was the first time I really saw myself as an engineer.</p>
         </div>
     </section>
 
@@ -119,7 +115,9 @@
             <p>
                 My first internship at Benchmark Electronics was a fantastic introduction to the industry. While my initial goal was to gain some hands-on experience, the role ended up being an invaluable opportunity to develop skills in Design for Manufacturing (DFM). I worked closely with experienced engineers and learned how to design products that are easier to manufacture and assemble. This knowledge gave me a new appreciation for the practical challenges of engineering, especially the importance of bridging the gap between design and production. I also picked up valuable technical skills, such as automating repetitive tasks with Python, Excel, and VBA. Overall, it was an eye-opening experience that gave me a unique insight into the difficulties of manufacturing that should be considered during the design stage. 
             </p>
-            <img src="images/Bench_logo.png">
+            <img src="images/Bench_logo.png" class="benchmark-logo" 
+                alt="Benchmark Electronics Logo"
+                style="width: 120px; height: auto; display: block; margin: 20px auto;">
         </div>
     
         <div class="experience-item">
@@ -128,6 +126,14 @@
             <p>
                 At Toro, I worked as an Advanced Manufacturing Engineering Intern, but my role was heavily focused on design and prototyping. My primary project involved developing an end-stock and a mechanical frame to assist in producing zero-turn lawn mowers. This project required designing, iterating, and refining a solution that would improve efficiency and accuracy in manufacturing. The hands-on nature of the work allowed me to explore various design challenges, from stress analysis to assembly constraints, and prototype solutions in a fast-paced environment. While the position was rooted in manufacturing, it gave me significant exposure to mechanical design, and I was able to apply engineering principles to real-world problems, reinforcing my interest in design and R&D.
             </p>
+        </div>
+        <div class="experience-item">
+            <h3>Mechanical Engineering Intern at Milwaukee Tool</h3>
+            <p>Summer 2025</p>
+            <p>
+                Coming soon. 
+            </p>
+            <img src="images/Milwaukee_Logo.svg">
         </div>
     </section>
     
@@ -207,11 +213,10 @@
     <!-- Footer Section -->
     <footer id="footer">
         <a href="https://www.linkedin.com/in/ian-seremet-5b1471248/" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
-        <a href="https://www.fiverr.com/s/8zp06oE" target="_blank" class="social-icon">
-            <img src="images/fiverr.png" alt="Fiverr" style="width: 24px; height: 24px;">
-        </a>        
+        <a href="https://github.com/ianseremet" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
         <a href="https://www.instagram.com/i.sierramist?igsh=ZWswMWhjMjNhZm0z&utm_source=qr" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
     </footer>
+
 </body>
 
 </html>
